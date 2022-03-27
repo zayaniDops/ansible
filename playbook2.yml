@@ -1,5 +1,5 @@
 ---
-- hosts: local
+- hosts: marwen
   connection: local 
   become: yes
 
