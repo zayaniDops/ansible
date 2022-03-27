@@ -6,7 +6,7 @@
 
   tasks:
     - name: Login DockerHub
-      community.docker.docker_login:
+      docker_login:
         username: zayanimarwen
         password: Edusmart123
 
