@@ -1,6 +1,6 @@
 ---
 - hosts: marwen
-  connection: local 
+  #connection: local 
   become: yes
 
 
