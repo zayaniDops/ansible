@@ -1,0 +1,20 @@
+---
+- hosts: localhost
+  connection: local 
+  become: true
+
+
+  tasks:
+    - name: Login DockerHub
+      community.docker.docker_login:
+        username: zayanimarwen
+        password: Edusmart123
+
+    - name: ensure a container is running
+      docker_container:
+        name: Projet01
+        state: started
+        image: "zayanimarwen/project01:9"
+        pull: true
+        ports:
+          - "5000:5000"
